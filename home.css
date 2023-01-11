@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+  text-decoration: none;
+}
+body {
+    background-color: #f3f3f3;
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    background-attachment: fixed;
+    width: 1270px;
+    margin: 0 auto;
+}
+.header {
+    margin: 0;
+    border-top: 2px solid #ffffff;
+    border-bottom: 3px solid #0068b7;
+    position: fixed;
+    z-index: 1;
+    width: 1270px;
+    height: 63px;
+    background-color: rgb(107, 166, 224);
+}
+.LOGO {
+    width: 160px;
+    height: 60px;
+    float: left;
+    margin-top: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    height: 42px;
+    padding-top: 14px;
+    overflow: hidden;
+    background-color: #6ba6e0;
+  }
+  
+  li {
+    float: left;
+    width: auto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  li a, .first {
+    display: inline-block;
+    font-size: 14px;
+    color:#ffffff;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .nav:hover .first {
+    width: auto;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    background-color: #0068B7;
+  }
+  
+  li.nav {
+    display: inline-block;
+  }
+  
+  .navson {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 138px;
+  }
+  
+  .navson a {
+    color: #ffffff;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background-color: #6ba6e0;
+  }
+  
+  .navson a:hover {
+    color: #ffffff;
+    background-color: #0068b7;
+  }
+  
+  .nav:hover .navson {
+    display: block;
+  }
+  .input {
+    float: right;
+    margin-right: 20px;
+  }
+  .search {
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+    width: 180px;
+    height: 30px;
+    color: #000000;
+    border-color: #6781b9;
+}
+.btn {
+    font-weight: 700;
+    font-size: 15px;
+    height: 30px;
+    color: #ffffff;
+    background-color: #0068b7;
+    border-color: #000000;
+}
+
+/*侧边栏*/
+.sidebar {
+  position: fixed;
+  float: left;
+   margin-top: 70px;
+   width: 150px;
+   height: 380px;
+}
+.sidebar a {
+  display: inline-block;
+  text-align: left;
+  height: 60px;
+  width: 120px;
+  padding-left: 20px;
+  line-height: 60px;
+  font-size: 16px;
+  background-color: #6ba6e0;
+  color: #0068b7;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  color: #fff;
+  width: 130px;
+  background-color: #0068b7;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+#box1 {
+  display: inline-block;
+  float: right;
+   /* 大盒子相对定位，占据原来的位置 */
+   position: relative;
+   z-index: 0;
+   width: 800px;
+   height: 380px;
+   overflow: hidden;
+   margin: 0 auto;
+   color: #0068b7;
+   margin-right: 310px;
+   margin-top: 70px;
+   background-color: rgba(255, 255, 255, 0.4);
+}
+img {
+  width: 800px;
+  height: 380px;
+}
+.picture {
+  /* 包图片的盒子宽度等于6张图片加起来的宽度*/
+  /* 高度等于图片的高度 */
+  width: 5600px;
+  height: 380px;
+  /* animation 一整个动画的时间 是10秒 */
+  /* infinite代表动画无限的执行（动画的执行次数） */
+  animation: 10s RBT infinite;
+  /* 相邻的行内块在一行上，之间会有空白缝隙 
+  所以是用来清除行内块间距 的*/
+  font-size: 0;
+}
+@keyframes RBT {
+  /* 初始状态为0 时 不移动 */
+  0% {
+      transform: translateX(0px);
+  }
+  /* 动画时间过去10%时 就得移动一张图片的距离 */
+  /* 10*10%=1 表示一秒钟 移动了一张图片的距离 */
+  10% {
+      transform: translateX(-800px);
+  }
+  /* 10*20%=2 表示到第二秒的时候图片不移动 停留了一秒钟 */
+  20% {
+      transform: translateX(-800px);
+  }
+  30% {
+      transform: translateX(-1600px);
+  }
+  40% {
+      transform: translateX(-1600px);
+  }
+  50% {
+      transform: translateX(-2400px);
+  }
+  60% {
+      transform: translateX(-2400px);
+  }
+  70% {
+      transform: translateX(-3200px);
+  }
+  80% {
+      transform: translateX(-3200px);
+  }
+  90% {
+      transform: translateX(-4000px);
+  }
+  100% {
+      transform: translateX(-4000px);
+  }
+}
+/* 并集选择器集体声明 让代码更简洁 */
+.arrow-l,
+.arrow-r {
+  /* 只能用定位做，才能压住盒子 */
+  /* 不要占有位置，随便移动定位，必须用绝对定位 */
+  position: absolute;
+  /* 绝对定位的盒子无须转换，直接给大小 */
+  width: 20px;
+  height: 30px;
+  /* 垂直居中公式 */
+  /* 先走父级高度的50% */
+  top: 50%;
+  /* 往上走自己高度的一半 */
+  margin-top: -15px;
+  background: rgba(0, 104, 183, 0.3);
+  text-decoration: none;
+  color: #fff;
+  line-height: 30px;
+}
+.arrow-l {
+  left: 0;
+  border-radius: 0 15px 15px 0;
+}
+.arrow-r {
+  right: 0;
+  text-align: right;
+  /* 圆角矩形 */
+  border-radius: 15px 0 0 15px;
+}
+/* 鼠标经过，箭头颜色改变 */
+.arrow-l:hover,
+.arrow-r:hover {
+  background: rgba(0, 0, 0, .4);
+}
+.circle {
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  bottom: 15px;
+  width: 70px;
+  height: 15px;
+  padding-top: 0;
+  background: rgba(0, 104, 183, 0.3);
+  border-radius: 7px;
+}
+.circle li {
+  /* position: fixed; */
+  float: left;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  margin: 3px;
+  border-radius: 50%;
+  /* 设定鼠标的形状为一只伸出食指的手 */
+  cursor: pointer;
+}
+/* current 当前的意思   此处一定要注意优先级的问题 */
+.circle .current {
+  background-color: #ff5000;
+}
+.box2 {display: inline-block;
+  position: fixed;
+  float: right;
+  color: #0068b7;
+  margin-left: 980px;
+  margin-top: 70px;
+  width: 270px;
+  height: 80px;
+  padding: 10px;
+  padding-right: 0px;
+  
+  
+}
+.box2 img {
+  float: right;
+  width: 150px;
+  height: 200px;
+}
+#box3 {
+  float: right;
+  color: #0068b7;
+  margin-right: 160px;
+  margin-top: 10px;
+  width: 910px;
+  height: 150px;
+  padding: 20px;
+  background-color: rgba(103, 129, 185, 0.4);
+}
+#box4 {
+  float: right;
+  color: #0068b7;
+  margin-right: 160px;
+  margin-top: 10px;
+  width: 910px;
+  height: 600px;
+  padding: 20px;
+
+  background-color: rgba(103, 129, 185, 0.4);
+}
+#box5 {
+  float: right;
+  color: #0068b7;
+  margin-right: 160px;
+  margin-top: 10px;
+  width: 910px;
+  height: 1100px;
+  padding: 20px;
+  background-color: rgba(103, 129, 185, 0.4);
+}
+#box5 b {
+  color: #0068b7;
+}
+#box6 {
+  float: right;
+  color: #0068b7;
+  margin-right: 160px;
+  margin-top: 10px;
+  width: 950px;
+  height: 200px;
+  background-color: rgba(103, 129, 185, 0.4);
+}
+#box7 {
+  float: right;
+  color: #0068b7;
+  margin-right: 160px;
+  margin-top: 10px;
+  width: 910px;
+  height: 200px;
+  padding: 20px;
+  background-color: rgba(103, 129, 185, 0.4);
+}
+
+/*页面底部*/
+.footer {
+  float: right;
+  color: #0068b7;
+  margin-top: 10px;
+  width: 1270px;
+  height: 150px;
+  background-color: rgb(107, 166, 224);
+}
+.footer a{
+	color: #ffffff;
+}
+/*底部版权*/
+.copyright {
+	padding-top: 20px;
+	text-align: center;
+	color: #0068b7;;
+	font-size: 12px;
+}
+.copyright span {
+	margin: 0  10px;
+}
+ 
+.copyright div {
+	margin-top:20px;
+}
+.copyright div p {
+  font-size: 15px;
+	line-height: 22px;
+}

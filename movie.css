@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+    text-decoration: none; 
+    background-repeat: no-repeat;
+    background-position: center 60px;
+  }
+  body {
+    background-image: url(../image/movieback.jpg);
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    background-attachment: fixed;
+    width: 1270px;
+    margin: auto;
+  }
+  .header {
+    margin: 0;
+    border-top: 2px solid #ffffff;
+    border-bottom: 3px solid rgb(0, 104, 183);
+    position: fixed;
+    z-index: 1;
+    width: 1270px;
+    height: 63px;
+    background-color: #6ba6e0;
+}
+
+.LOGO {
+    width: 160px;
+    height: 60px;
+    float: left;
+    margin-top: 5px;
+}
+  .leftnav {
+    position: fixed;
+    float: left;
+    height: 500px;
+    width:250px;
+    margin-top: 70px;
+  }
+  .leftnav a {
+    display: inline-block;
+    text-align: left;
+    height: 60px;
+    width: 130px;
+    padding-left: 30px;
+    line-height: 60px;
+    font-size: 16px;
+    background-color: #6ba6e0;
+    color: #0068b7;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-decoration: none;
+  }
+  .leftnav a:hover {
+    color: #fff;
+    width: 150px;
+    background-color: #0068b7;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .banner {
+    position: absolute;
+    z-index: 0;
+    float: left;
+    margin-top: 60px;
+  width: 1020px;
+	height: 615px;
+  margin-left: 160px;
+  }
+  .banner h1 {
+    float: right;
+    margin-top: 15px;
+    width: 990px;
+    text-align: center;
+    color: #0068b7;
+    background-color: rgb(92, 114, 160,);
+  }
+  .right {
+    float: right;
+    width: 992px;
+    overflow: hidden;
+    margin-top: 10px;
+    background-color: rgba(92, 114, 160,0.5);
+  }
+  .right li {
+    width: 230px;
+    height: 320px;
+    float: left;
+    margin-left: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  .pic {
+    width: 100%;
+    float: left;
+  }
+  .right li img{
+    height: 320px;
+    width: 230px;
+    z-index: 0;
+    background-size: cover;
+    background-position: 0px -30px;
+    transition: all 0.5s ease 0s;
+    opacity: 0.8;
+  }
+  
+  .right li img:hover{
+    transform: scale(1.1);
+  }
+  .back {
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+    background-color: #93c8fa;
+    border-color: #5c72a0;
+    color: #5c72a0;
+    width: 180px;
+    font-weight: 700;
+}
