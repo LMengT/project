@@ -14,7 +14,7 @@ body{
     align-items: center;
     width: 100%;
     height: 100%;
-    background-image: url("../image/loginback.jpg");
+    background-image: url("loginback.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     transform: scale(1.05);
