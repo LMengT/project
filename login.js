@@ -11,7 +11,7 @@ var zh=document.getElementById('zh');
 var mm=document.getElementById('mm');
 function login(){
     if(zh.value==""||mm.value==""){
-        alert("账号或密码不能为空");
+        alert("账号或密码不能为空，请输入账号:123456密码:123456");
         return false;
     }
     else if(zh.value!="123456"||mm.value!="123456"){    
