@@ -13,7 +13,7 @@
     background-attachment: fixed;
     width: 1270px;
     margin: 0 auto;
-    background-image: url(../image/actorback.jpg);
+    background-image: url(actorback.jpg);
 
   }
   .header {
@@ -93,28 +93,28 @@ text-align: center;
   overflow: hidden;
 }
 .part1 .img{
-  background-image: url("../image/actor01.jpg");
+  background-image: url("actor01.jpg");
 }
 .part2 .img{
-  background-image: url("../image/actor02.jpg");
+  background-image: url("actor02.jpg");
 }
 .part3 .img{
-  background-image: url("../image/actor03.jpg");
+  background-image: url("actor03.jpg");
 }
 .part4 .img{
-  background-image: url("../image/actor04.jpg");
+  background-image: url("actor04.jpg");
 }
 .part5 .img{
-  background-image: url("../image/actor05.jpg");
+  background-image: url("actor05.jpg");
 }
 .part6 .img{
-  background-image: url("../image/actor06.jpg");
+  background-image: url("actor06.jpg");
 }
 .part7 .img{
-  background-image: url("../image/actor07.jpg");
+  background-image: url("actor07.jpg");
 }
 .part8 .img{
-  background-image: url("../image/actor08.jpg");
+  background-image: url("actor08.jpg");
 }
 
 .pt .img{
