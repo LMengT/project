@@ -3,7 +3,7 @@
     padding: 0;
 }
 body {
-    background-image: url(../image/introduceback.jpg);
+    background-image: url(introduceback.jpg);
     background-repeat: repeat;
     background-position: center 10px;
     background-attachment: fixed;
